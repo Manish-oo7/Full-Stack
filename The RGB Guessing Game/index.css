@@ -1,0 +1,70 @@
+body {
+    background-color: #232323;
+    margin: 0;
+}
+
+#gameName {
+    background-color: rgb(218, 186, 105);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background 1s;
+}
+
+h1 {
+    margin: 0px 0px;
+}
+
+#grid {
+    width: 40%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.gridStyle {
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float:left;
+    /* margin-left: 1.66%; */
+    border-radius: 10%;
+    margin: 1.66% 1.66%;
+    transition: background 1s;
+}
+
+#options {
+ background-color: white;   
+ padding-top:auto;
+ text-align: center;
+ height: 30px;
+ margin-bottom: 30px;
+}
+
+span {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#message {
+    width: 20%;
+    display: inline-block;
+}
+
+.selected {
+    background-color:rgb(218, 186, 105);
+}
+
+button {
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: ease-out 0.5s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(218, 186, 105);
+}
