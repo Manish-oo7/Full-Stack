@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="./css/sort.css">
+    </head>
+    <body>
+        <div id="buttons">
+            <button type="submit" id="newArray" class="btn">Generate New Elements</button>
+            <button type="submit" id="selectionSort" class="btn">Selection Sort</button>
+            <button type="submit" id="bubbleSort" class="btn">Bubble Sort</button>
+            <!-- <button type="submit" id="mergeSort" class="btn">Merge Sort</button> -->
+        </div>
+        <div id="about">
+            <div id="instruction">
+                <h2 class="aboutS">Welcome to Sorting Visualizer: Now understand sorting in seconds.</h2>
+                <p class="aboutS" style="font-size: 120%;">You can generate new elements by clicking on the Generate New Elements button.</p>
+                <p class="aboutS" style="font-size: 120%; color: blueviolet;">Click on the "Sorting" buttons to start sorting.</p>
+                <p class="aboutS" style="font-size: 120%;"> <b> Recommended: </b>Before you start visualizing please go through the sorting algorithm once and then you can generate new
+                    elements and start over again.
+                </p>
+            </div>
+            <div id="selectionContainer" class="aboutSub">
+                    <h2 class="aboutS">All about Selection Sort:</h2>
+                    <p class="aboutS" style="font-size: 120%;">The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+
+                        1) The subarray which is already sorted.
+                        2) Remaining subarray which is unsorted.
+                        
+                        In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+                        Best, average and worst case time complexity: (n^2) which is independent of distribution of data.
+                    </p>
+                    <p class="aboutS" style="font-size: 120%;"><b>About the following visualization:</b> In each iteration you will find a blue bar getting added to the beggining, this is the smallest bar length found
+                        at each iteration.</p>
+                    <p class="aboutS" style="font-size: 120%; color: blueviolet;">Click on the "Selection Sort" button to start sorting.</p>
+            </div>
+            <div id="bubbleContainer" class="aboutSub">
+                    <h2 class="aboutS">All about Bubble Sort:</h2>
+                    <p class="aboutS" style="font-size: 120%;">
+                        Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. 
+                        This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
+                    </p>
+                    <p class="aboutS" style="font-size: 120%;"><b>About the following visualization:</b> In each iteration you will find a blue bar getting added at the end, this is the largest bar length found
+                        at each iteration.</p>
+                    <p class="aboutS" style="font-size: 120%; color: blueviolet;">Click on the "Bubble Sort" button to start sorting.</p>
+            </div>
+            <div id="mergeContainer" class="aboutSub">
+                <h2 class="aboutS">All about Merge Sort:</h2>
+                <p class="aboutS" style="font-size: 120%;">Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves.
+                    The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+                    Best, average and worst case time complexity: (N(logN)) which is independent of distribution of data.
+                </p>
+                <p class="aboutS" style="font-size: 120%;"><b>About the following visualization:</b> In each iteration you will find a blue bar getting added to the beggining, this is the smallest bar length found
+                    at each iteration.</p>
+                <p class="aboutS" style="font-size: 120%; color: blueviolet;">Click on the "Merge Sort" button to start sorting.</p>
+            </div>
+        </div>
+        <div id="container">
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/sort.js"></script>
+</html>
